@@ -76,6 +76,8 @@ GEM
       warden (~> 1.2.3)
     erubi (1.10.0)
     ffi (1.15.4)
+    friendly_id (5.4.2)
+      activerecord (>= 4.0.0)
     globalid (1.0.0)
       activesupport (>= 5.0)
     i18n (1.8.11)
@@ -194,6 +196,7 @@ DEPENDENCIES
   bootsnap (>= 1.4.4)
   byebug
   devise (~> 4.8)
+  friendly_id (~> 5.4.0)
   listen (~> 3.3)
   pg (~> 1.1)
   puma (~> 5.0)
