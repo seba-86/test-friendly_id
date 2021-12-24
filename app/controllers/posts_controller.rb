@@ -4,11 +4,12 @@ class PostsController < ApplicationController
 
   # GET /posts
   def index
-    @posts = Post.all
+    @posts = Post.all.order("created_at DESC")
   end
 
   # GET /posts/1
   def show
+    
   end
 
   # GET /posts/new
@@ -49,6 +50,7 @@ class PostsController < ApplicationController
   private
     # Use callbacks to share common setup or constraints between actions.
     def set_post
+      # @post = Post.friendly.find(params[:id])
       @post = Post.find(params[:id])
     end
 
